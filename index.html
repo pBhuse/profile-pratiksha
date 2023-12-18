@@ -1,62 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Index</title>
-</head>
-<style>
-    header{
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- CDN Link - Google font families -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Concert+One&family=Poppins&family=Roboto:wght@500;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      header {
+        height: 35px;
         background-color: rgb(144, 241, 241);
         color: rgb(241, 10, 10);
-    }
-    nav a{
-            margin-right: 40px;
-            text-decoration: none;
-            
-        }
-        nav{
-            background-color: rgb(223, 146, 146);
-        }
-        #homeLink{
-            margin-left: 10px;
-        }
-span{
- margin-right:30px;
-}
-footer a{
-    margin-right:45px;
-    text-decoration: none;
-}
-</style>
-<body>
-    
+      }
+
+      header i {
+        text-align: center;
+      }
+      nav a {
+        /* margin-right: 40px; */
+        text-decoration: none;
+        font-family: "Concert One", sans-serif;
+        /* text-align: center; */
+        margin: 0px 5px 0px 5px; 
+        color: brown;
+      }
+      nav {
+        height: 35px;
+        background-color: rgb(186, 137, 233);
+      }
+      /* font-family: 'Concert One', sans-serif; */
+
+      #homeLink {
+        margin-left: 10px;
+      }
+      header span i {
+        margin: 10px 3px 10px 5px;
+      }
+      header {
+        text-align: right;
+      }
+      /* footer{
+        background-color: brown;
+    } */
+
+      footer span {
+        margin-right: 45px;
+        text-decoration: none;
+        /* float: right; */
+        height: 20px;
+        width: 20px;
+      }
+
+      header #aimg {
+        width: 30px;
+        height: 35px;
+        position: relative;
+        float: left;
+        background-color: rgb(21, 208, 241);
+      }
+    </style>
+  </head>
+  <body>
     <!-- Header Section -->
     <header>
-        <span> Name: Pratiksha Bhuse</span>  <span> Mobile: 8600 2550 66 </span>  <span>Email: abc@gmail.com</span>
+      <img src="assests/userlogo.jpg" alt="developer image" id="aimg" />
+      <span>
+        <i class="fa fa-user-circle-o" aria-hidden="true"></i>Pratiksha
+        Bhuse</span
+      >
+      <span>
+        <i class="fa fa-phone-square" aria-hidden="true"></i> 8600 2550 66
+      </span>
+      <span
+        ><i class="fa fa-envelope" aria-hidden="true"></i> abc@gmail.com</span
+      >
     </header>
-    <hr>
-   
+    <hr />
+
     <!-- Navigation Section -->
     <nav>
-        <a href="home.html" target="mainFrame" id="homeLink">HOME</a> 
-        <a href="techStack.html" target="mainFrame">TECH STACK</a> 
-        <a href="project.html" target="mainFrame">PROJECT</a> 
-        <a href="education.html" target="mainFrame">EDUCATION</a> 
-        <a href="others.html" target="mainFrame">OTHERS</a>
+      <a href="home.html" target="mainFrame">HOME</a>
+      <a href="techStack.html" target="mainFrame">TECH STACK</a>
+      <a href="project.html" target="mainFrame">PROJECT</a>
+      <a href="education.html" target="mainFrame">EDUCATION</a>
+      <a href="others.html" target="mainFrame">OTHERS</a>
     </nav>
-    <hr>
-   
-    <!-- Body Section -->
-    <iframe src="home.html" name="mainFrame" frameborder="0" width="900px" height="450px">
+    <hr />
 
+    <!-- Body Section -->
+    <iframe
+      src="home.html"
+      name="mainFrame"
+      frameborder="0"
+      width="900px"
+      height="450px"
+    >
     </iframe>
     <!-- Footer Section -->
     <footer>
-        <a href="https://www.linkedin.com/in/pratiksha-bhuse-546bb4253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">Linked IN</a> 
-        <a href="https://github.com/pBhuse/profile-pratiksha.git">GitHub</a>
-        <a href="project.html">Naukri</a>
+      <span
+        ><a
+          href="https://www.linkedin.com/in/pratiksha-bhuse-546bb4253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+          target="_blank"
+          ><i class="fa fa-linkedin" aria-hidden="true"></i
+        ></a>
+      </span>
+      <span
+        ><a
+          href="https://github.com/pBhuse/profile-pratiksha.git"
+          target="_blank"
+          ><i class="fa fa-github" aria-hidden="true"></i></a
+      ></span>
+      <span
+        ><a href="project.html" target="_blank"
+          ><i class="fa fa-laptop" aria-hidden="true"></i></a
+      ></span>
     </footer>
     <!-- Footer Section -->
-</body>
+  </body>
 </html>
